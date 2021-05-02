@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html {
+   --green: #59c45a;
+   --white: #fff;
+   --grey: #474747;
+   --darkgrey: #3c3c3c;
+   --lightgrey: #959595;
+   --wrapWidth: 1920px;
+   --contWidth: 1200px; /*оригинал 1170, но добавляем по 15 пикселей с каждой стороны для адаптиции */
+   --font: 'Lato', sans-serif;
+}
+body {
+    background: var(--white);
+    font-family: 'Lato', sans-serif;
+}
+wrapper{
+    max-width: var(--wrapWidth) ;
+    margin: 0 auto;
+}
+.container{
+    max-width: var(--wrapWidth);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--grey);
+    display: block;
+    padding: 56px 23px;
+    font-size: 18px;
+    transition: .3s;
+}
+nav a:hover {
+    color: var(--white);
+    background: var(--green);
+}
+header .container {
+    align-items: center;
+}
