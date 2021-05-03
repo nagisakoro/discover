@@ -6,4 +6,8 @@ $(function() {
         $('nav ul').slideUp();
     }
 });
+$('.service-slider').slick({
+    arrows: false,
+    dots: true,
+})
 });
