@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -26,8 +27,8 @@
     <div class="wrapper">
         <header>
             <div class="container">
-                <a href="#" class="logo">Discover</a> 
-                <nav>
+                <a href="#" class="logo" data-aos="slide-right">Discover</a> 
+                <nav data-aos="slide-left">
                     <button class="mini-menu">Menu</button>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -39,12 +40,13 @@
                 </nav>
             </div>
         </header>
+
         <section class="home">
             <div class="container home-container">
-                <h1 class="home-title">Discover</h1>
-                <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <h1 class="home-title" data-aos="fade-up" data-aos-delay="50">Discover</h1>
+                <p class="home-text" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="home-link" href="#">Booking tour</p>
+                <a class="home-link" href="#" data-aos="fade-up" data-aos-delay="150">Booking tour</a>
             </div>
         </section>
 
@@ -101,7 +103,7 @@
 		</section>
 
         <section class="service">
-         <div class="service-slider">
+         <div class="service-slider" data-aos="slide-right" data-aos-delay="200">
              <div class="slide">
                  <img src="https://picsum.photos/id/1018/1200/620" alt="">
              </div>
@@ -115,7 +117,7 @@
                 <img src="https://picsum.photos/id/10/1200/620" alt="">
             </div>
          </div>   
-         <div class="service-block">
+         <div class="service-block" data-aos="slide-left" data-aos-delay="300">
              <h2 class="section-title">Service</h2>
              <div class="container service-container">
                  <div class="service-item">
@@ -138,8 +140,8 @@
          </div>
         </section>
         <section class="tours">
-			<h2 class="section-title">Tours</h2>
-			<div class="container tours-container">
+			<h2 class="section-title" data-aos="fade-up" data-aos-delay="50">Tours</h2>
+			<div class="container tours-container" data-aos="zoom-in" data-aos-delay="100">
 				<a data-fancybox="tour" href="https://picsum.photos/id/1018/1200/1200">
 					<img src="https://picsum.photos/id/1018/270/215" alt="">
 				</a>
@@ -177,11 +179,11 @@
 					<img src="https://picsum.photos/id/11/270/215" alt="">
 				</a>
 			</div>
-			<button class="more">See more</button>
+			<button class="more" data-aos="fade-up" data-aos-delay="150" >See more</button>
 		</section>
         <section class="contacts">
 			<h2>Contact</h2>
-			<div class="container contacts-container">
+			<div class="container contacts-container" data-aos="fade-up" data-aos-delay="300">
 				<div class="contact-info">
 					<a href="#" class="logo footer-logo">Discover</a>
 					<p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
@@ -215,7 +217,7 @@
 						<input type="text" placeholder="Your name">
 						<input type="email" placeholder="Email">
 						<textarea placeholder="Message"></textarea>
-						<button type="submit">Send<i class="fas fa-envelope"></i></button>
+						<button type="submit" data-aos="flip-left">Send<i class="fas fa-envelope"></i></button>
 					</form>
 				</div>
 			</div>
@@ -224,6 +226,7 @@
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
